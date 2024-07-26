@@ -1,0 +1,430 @@
+  /* Reset CSS */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+
+  /* Navbar */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    border-bottom: 5px solid turquoise;
+    /* padding: 10px 0px; */
+    z-index: 1000;
+    height: 100px;
+    
+  }
+
+  .navdiv .img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    
+  }
+.jbutton{
+  color: turquoise;
+  background-color: white;
+  cursor: pointer;
+}
+
+.joinn{
+  align-items: right;
+  border: 2px solid turquoise;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+  
+}
+  /* .hide {
+    display: none;
+  } */
+
+  /* @media screen and (min-width: 600px) {
+    .nav__link {
+        display: flex;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .nav__link a {
+        display: inline-block;
+        padding: 15px 20px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+  } */
+
+  /* Main Content */
+  .main {
+    padding-top: 80px; /* Add padding to avoid content being hidden under the navbar */
+  }
+
+  .home {
+    background: url('photo1.JPG') no-repeat center center ;
+    background-size: cover;
+    animation: backgroundAnimation 10s infinite alternate;
+    color: white;
+    text-align: center;
+    /* padding: 50px 20px; */
+  }
+
+  .titles {
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 25% 0 5%; */
+    padding-bottom: 20px;
+    
+    
+    padding-top: 10%;
+  }
+
+  @keyframes backgroundAnimation {
+    from {
+        background-image: url('photo1.JPG');
+    }
+    to {
+        background-image: url('photo2.JPG');
+    }
+  }
+
+  .home h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .home .aboutp {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    word-spacing: 1.6px;
+    color: #fdf6f6;
+    font-weight: 400;
+    padding-bottom: 20px;
+
+  }
+
+
+
+  .btn {
+    margin: auto;
+    width: 50%;
+    border: 3px solid turquoise;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10PX;
+    background-color: rgba(0, 0, 0, 0.662);
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: turquoise;
+    font-family: 'Roboto', sans-serif;
+
+  
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  .btn::after {
+    background-color: turquoise;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+  }
+
+  .btn:hover::after {
+    transform: translate(0, 0);
+  }
+
+  .btn:hover {
+    border: 2px solid transparent;
+    color: indigo;
+    transform: scale(1.05);
+    will-change: transform;
+  }
+
+
+  .button2:hover {
+    background-color: white;
+    color: black;
+  }
+  .name{
+  color: white;
+  letter-spacing: 4.2px;
+  word-spacing: 4.8px;
+  }
+
+  .btn2{
+    text-align: center;
+  }
+  /* Program Section */
+  .program {
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .program h2 {
+    font-size: 24px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    text-decoration: underline solid turquoise;
+    margin-bottom: 20px;
+  }
+
+  .program .details {
+    margin: 20px 0;
+  }
+
+  .detailsp {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    color: #faf7f7;
+    font-weight: 400;
+    padding-bottom: 3%;
+  }
+
+  .detailsp1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 10%;
+  }
+
+  .button-49,
+  .button-49:after {
+    width: 250px;
+    height: 65px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    padding-top: 2PX;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .button-49:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .button-49:after {
+    content: 'JOIN NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: inset(50% 50% 50% 50%);
+  }
+
+  .button-49:hover:after {
+    animation: glitch 1s steps(2, end);
+  }
+
+  @keyframes glitch {
+    0% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(10px, 10px);
+    }
+    20% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-10px, 10px);
+    }
+    30% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(0px, 5px);
+    }
+    40% {
+        clip-path: inset(50% -6px 43% 0);
+        transform: translate(-5px, 0px);
+    }
+    50% {
+        clip-path: inset(10% -6px 85% 0);
+        transform: translate(5px, 0px);
+    }
+    60% {
+        clip-path: inset(40% -6px 43% 0);
+        transform: translate(5px, 10px);
+    }
+    70% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        clip-path: inset(80% -6px 5% 0);
+        transform: translate(20px, -10px);
+    }
+    90% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        clip-path: inset(50% -6px 30% 0);
+        transform: translate(0);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .button-49,
+    .button-49:after {
+        width: 250px;
+        height: 86px;
+        line-height: 88px;
+    }
+  }
+
+  /* All List */
+  .allList {
+    list-style-type: none;
+    /* background: url('logo.gif') no-repeat center center fixed; */
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .allList .list {
+    background-color:rgba(64, 224, 208, 0.613);
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+
+  .allList .list:hover {
+    transform: scale(1.05);
+  }
+
+  /* Testimonials Section */
+  .testimonials {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    align-items: center;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #prev {
+    left: 10px;
+  }
+
+  #next {
+    right: 10px;
+  }
+  .profile{
+    border-radius: 50%;
+  }
+
+  /* Contact Us Section */
+  .contactus {
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .contactus h1 {
+    margin-bottom: 20px;
+  }
+
+  .contactus p {
+    margin: 10px 0;
+  }
+
+
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .home, .program, .testimonials, .contactus {
+        /* padding: 20px; */
+    }
+
+    .home h1 {
+        font-size: 2em;
+    }
+
+    .allList .list {
+        padding: 20px;
+    }
+  }
