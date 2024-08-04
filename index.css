@@ -19,12 +19,14 @@
     color: white;
     position: fixed;
     width: 100%;
-    border-bottom: 5px solid turquoise;
+    border-bottom: 5px solid #40e0d0;
     /* padding: 10px 0px; */
     z-index: 1000;
     height: 100px;
     
   }
+
+  
 
   .navdiv .img{
     display: block;
@@ -113,13 +115,17 @@
 
   .home .aboutp {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.6px;
     word-spacing: 1.6px;
     color: #fdf6f6;
     font-weight: 400;
-    padding-bottom: 20px;
+    margin: 6%;
 
+
+  }
+  .y{
+    padding-top: 3%;
   }
 
 
@@ -193,7 +199,7 @@
   }
   /* Program Section */
   .program {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     background-color: black;
     color: white;
     text-align: center;
@@ -208,28 +214,66 @@
   }
 
   .program .details {
-    margin: 20px 0;
+    margin:  0;
+    background: #40E0D0;
+    background: -moz-linear-gradient(-45deg, #40E0D0 0%, #000000 31%, #000000 100%);
+    background: -webkit-linear-gradient(-45deg, #40E0D0 0%, #000000 31%, #000000 100%);
+    background: linear-gradient(135deg, #40E0D0 0%, #000000 31%, #000000 100%);
   }
 
   .detailsp {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 0.4px;
     word-spacing: 2px;
     color: #faf7f7;
     font-weight: 400;
-    padding-bottom: 3%;
+   margin: 5%;
+
   }
 
   .detailsp1 {
     font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 14px;
+    font-size: 24px;
     letter-spacing: 0.4px;
     word-spacing: 2px;
     color: #ffffff;
     font-weight: 700;
     padding-bottom: 10%;
   }
+ 
+
+.video-container {
+  position: relative;
+  padding-bottom:50.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  /* max-width: 100%; */
+  margin: 0 auto; /* Center the video */
+  -webkit-box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45); 
+box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 780px) {
+  .video-container {
+    max-width: 800px; /* Adjust as needed */
+    max-height: 300px; /* Maximum height */
+  }
+}
+
+
+
+
+
 
   .button-49,
   .button-49:after {
@@ -399,7 +443,7 @@
 
   /* Contact Us Section */
   .contactus {
-    padding: 50px 20px;
+    padding: 20px 10px;
     background-color: black;
     color: white;
     text-align: center;
@@ -413,6 +457,12 @@
     margin: 10px 0;
   }
 
+  .contactus .ap {
+    margin: 10px 0;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 
   /* Responsive Design */
   @media screen and (max-width: 768px) {
