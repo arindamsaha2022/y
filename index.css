@@ -396,7 +396,8 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
     /* background: url('logo.gif') no-repeat center center fixed; */
     background-size: cover;
     padding: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 2%;
   }
 
   .allList .list {
@@ -406,13 +407,26 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
     margin: 10px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+    
   }
 
-  .allList .list:hover {
-    transform: scale(1.05);
+  .list{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
   }
 
+  .show{
+    opacity: 1;
+    filter:blur(0);
+    transform: translateX(0);
+  }
+@media(prefers-reduced-motion){
+  .hidden{
+    transition: none;
+  }
+}
   /* Testimonials Section */
   .testimonials {
     position: relative;
