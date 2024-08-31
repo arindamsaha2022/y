@@ -230,9 +230,16 @@
   margin: 10%;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: larger;
  }
  .Bonuses .list{
   padding: 1%;
+ }
+ .courses{
+  border: solid turquoise;
+  border: 5%;
+  border-radius: 20px;
+  margin: 30px;
  }
  .questions{
   text-align: left;
@@ -249,6 +256,9 @@
  }
  .questions .ul{
   list-style-type: none;
+ }
+ .io{
+  padding-left: 5%;
  }
 .q{
   padding-bottom: 10px;
@@ -448,7 +458,6 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
   }
 
   button {
@@ -473,6 +482,25 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
   .profile{
     border-radius: 50%;
   }
+ .tvideo{
+  
+ }
+ @media only screen and (min-width: 600px) {
+  .tvideo{
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+  }
+}
+ .video{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  
+ 
+ }
+ 
 
   /* Contact Us Section */
   .contactus {

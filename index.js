@@ -1,32 +1,6 @@
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
 
-window.onscroll = () =>{
-  let top =window.scrollY;
-  let offset = sec.offsetTop - 150;
-  let height = sec.offsetHeight;
-  let id = sec.getAttribute('id')
-
-  if (top>= offset && top <offset + height){
-    navLinks.forEach(links => {
-      links.classList.remove('active'); 
-      document .querySelector('header nav a [href*=' + id + ']').classList.add('active')
-    })
-  }
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav__link');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('hide');
-    });
-});
-
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
   const slider = document.querySelector(".slider");
@@ -36,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentIndex = 0;
 
   function updateSlider() {
-      const offset = -currentIndex * 100;
-      slider.style.transform = `translateX(${offset}%)`;
+      const offset = -currentIndex * items[0].offsetWidth;
+      slider.style.transform = `translateX(${offset}px)`;
   }
 
   function showNextSlide() {
@@ -55,8 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   setInterval(showNextSlide, 3000);
 
+  window.addEventListener("resize", updateSlider);
+
   updateSlider();
 });
+
 
 
 const observer = new IntersectionObserver((entries) => {
