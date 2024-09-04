@@ -53,49 +53,7 @@
     padding-top: 80px; /* Add padding to avoid content being hidden under the navbar */
   }
 
-  /* .home {
-    background: url('photo1.JPG') no-repeat center center ;
-    background-size: cover;
-    animation: backgroundAnimation 10s infinite alternate;
-    color: white;
-    text-align: center;
-   
-  }
-
-  .titles {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-bottom: 20px;
-    
-    
-    padding-top: 10%;
-  }
-
-  @keyframes backgroundAnimation {
-    from {
-        background-image: url('photo1.JPG');
-    }
-    to {
-        background-image: url('photo2.JPG');
-    }
-  }
-
-  .home h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-  }
-
-  .home .aboutp {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.6px;
-    word-spacing: 1.6px;
-    color: #fdf6f6;
-    font-weight: 400;
-    margin: 6%;
-
-
-  } */
+ 
   .y{
     padding-top: 5%;
   }
@@ -292,9 +250,7 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
   }
 }
 
-.sp{
-  margin: 3%;
-}
+
 .ans{
   font-weight: 700;
 
@@ -492,14 +448,7 @@ box-shadow: 0px 0px 19px 16px rgba(52,250,255,0.45);
     overflow: hidden;
   }
 }
- .video{
-  max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  
  
- }
  
 
   /* Contact Us Section */
