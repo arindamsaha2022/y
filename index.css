@@ -177,11 +177,11 @@
  }
  .Bonuses{
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -0.4px;
-  word-spacing: 4.6px;
+  word-spacing: 1px;
   color: #ffffff;
-  font-weight: 500;
+  /* font-weight: 500; */
   text-decoration: none;
   font-style: normal;
   font-variant: normal;
@@ -190,16 +190,15 @@
   margin: 10%;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: larger;
  }
  .Bonuses .list{
   padding: 1%;
  }
  .courses{
   border: solid turquoise;
-  border: 5%;
+  border: 2%;
   border-radius: 20px;
-  margin: 30px;
+  margin: 10px;
  }
  .questions{
   text-align: left;
